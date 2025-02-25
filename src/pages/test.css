@@ -1,3 +1,4 @@
+
 .custom-card {
     position: relative;  
     overflow: hidden;    
@@ -40,12 +41,47 @@
   }
 
   .tag-card{
-    margin-bottom: 24em;
     color : black;
     padding : 10px;
+    
   }
 
-  .tag-container{
-    background-color: grey;
-  }
-  
+  .tag-container {
+    background-color: rgba(215, 215, 215, 0.495);
+    width: 12vh;
+    border-radius: 18px;
+    position: absolute;
+    bottom: 373px;
+    left: 2px;
+}
+
+  .card-image-save {
+    position: absolute;
+    bottom: 378px;
+    right: 10px;
+    color: #000000;
+    font-size: 24px;
+    z-index: 1;
+    background-color: rgba(215, 215, 215, 0.495);
+    padding-top: 8px;
+    height: 50px;
+    width: 50px;
+    padding-left: 16px;
+    border-radius: 27px;
+}
+
+.card-content-md{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.card-text-save{
+    padding-top : 0;
+    padding-bottom : 0;
+}
+
+.detail_city {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
