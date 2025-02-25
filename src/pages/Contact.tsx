@@ -1,19 +1,24 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonFooter } from '@ionic/react';
 
-const FanMoon: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Fan Moon</IonTitle>
+          <IonTitle>Nos offres</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <p>Bienvenue sur la page Fan Moon !</p>
+        <p>Nos offres de voyages</p>
       </IonContent>
+      <IonFooter>
+        <IonToolbar>
+          <IonTitle>Footer Toolbar</IonTitle>
+        </IonToolbar>
+      </IonFooter>
     </IonPage>
   );
 };
 
-export default FanMoon;
+export default Contact;

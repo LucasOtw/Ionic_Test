@@ -4,11 +4,10 @@ import './Home.css';
 import { IonButton } from '@ionic/react';
 import { useHistory } from 'react-router-dom';
 
-
 const Home: React.FC = () => {
   const history = useHistory();
 
-  const handleClick = (path : string) => {
+  const handleClick = (path: string) => {
     history.push(path);
   };
 
@@ -25,8 +24,8 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={() => handleClick('/Contact.tsx')}>Clique STP</IonButton>
-        <IonButton onClick={() => handleClick('/Contact.tsx')}>Me contacter</IonButton>
+        <IonButton onClick={() => handleClick('/test')}>Clique STP</IonButton>
+        <IonButton onClick={() => handleClick('/contact')}>Me contacter</IonButton>
         <ExploreContainer />
       </IonContent>
     </IonPage>
