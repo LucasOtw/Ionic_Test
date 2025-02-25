@@ -2,6 +2,7 @@ import React from 'react';
 import { IonCard, IonCardContent, IonCardTitle, IonCardSubtitle, IonContent, IonText } from '@ionic/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import { IonButton } from '@ionic/react';
 import './test.css';  // Pour le CSS personnalisé
 
 const Example: React.FC = () => {
@@ -30,11 +31,21 @@ const Example: React.FC = () => {
       <IonContent>
         <IonText>
           <div className='detail_city'>
-            <p>Ensoleiller</p>
-            <p>Chaud</p>
-            <p>1.6mio Hab</p>
+            <p>☀️ Ensoleiller</p>
+            <p>🌡️ Chaud</p>
+            <p>👷‍♂️ 1.6mio Habs</p>
           </div>
         </IonText>
+
+        <IonText>
+        <div className='more_detail'>
+          <h4>Je crée mon voyage</h4>
+          <p>Tu peux créer ici ton voyage en 1 minute, c'est automatique, notre algorithme fait tout pour toi.</p>
+          </div>
+        </IonText>
+       
+
+        <IonButton className='button_create'>Créer 🚀</IonButton>
       </IonContent>
     </>
   );

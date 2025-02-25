@@ -85,3 +85,18 @@
     gap: 22px;
     justify-content: center;
 }
+
+
+.more_detail{
+    margin-left: 15px;
+}
+
+.button_create{
+    margin-left: 15px;
+    color : orange;
+    border-radius: 15px;
+}
+
+.button_create:hover{
+    color : rgb(183, 128, 26);
+}
