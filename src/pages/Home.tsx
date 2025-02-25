@@ -8,8 +8,8 @@ import { useHistory } from 'react-router-dom';
 const Home: React.FC = () => {
   const history = useHistory();
 
-  const handleClick = () => {
-    history.push('/Contact.tsx');
+  const handleClick = (path : string) => {
+    history.push(path);
   };
 
   return (
@@ -25,8 +25,8 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={handleClick}>Clique STP</IonButton>
-        <IonButton onClick={}>Me contacter</IonButton>
+        <IonButton onClick={() => handleClick('/Contact.tsx')}>Clique STP</IonButton>
+        <IonButton onClick={() => handleClick('/Contact.tsx')}>Me contacter</IonButton>
         <ExploreContainer />
       </IonContent>
     </IonPage>
