@@ -1,34 +1,33 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import { useIonRouter } from '@ionic/react';
 import './Home.css';
+import { IonButton } from '@ionic/react';
+import { useHistory } from 'react-router-dom';
+
 
 const Home: React.FC = () => {
-  const router = useIonRouter(); 
+  const history = useHistory();
 
-  const goToTestPage = () => {
-    router.push('/offre', 'forward', 'push');
+  const navigateToTest = () => {
+    history.push('/test');
   };
 
-  const goToContactPage = () => {
-    router.push('/contact', 'forward', 'push');
-  };
+
 
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Accueil</IonTitle>
+          <IonTitle>Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Accueil</IonTitle>
+            <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={goToTestPage}>Clique STP</IonButton>
-        <IonButton onClick={goToContactPage}>Me contacter</IonButton>
+        <IonButton onClick={navigateToTest}>Clique STP</IonButton>
         <ExploreContainer />
       </IonContent>
     </IonPage>

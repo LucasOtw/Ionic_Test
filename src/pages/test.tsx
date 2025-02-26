@@ -5,7 +5,7 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons';
 import { IonButton } from '@ionic/react';
 import './test.css';  // Pour le CSS personnalisé
 
-const Offre: React.FC = () => {
+const Example: React.FC = () => {
   return (
     <>
       <IonCard className="custom-card">
@@ -51,4 +51,4 @@ const Offre: React.FC = () => {
   );
 }
 
-export default Offre;
+export default Example;
