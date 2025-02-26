@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonButton onClick={() => handleClick('/test')}>Clique STP</IonButton>
+        <IonButton onClick={() => handleClick('/tes.tsx')}>Clique STP</IonButton>
         <IonButton onClick={() => handleClick('/contact')}>Me contacter</IonButton>
         <ExploreContainer />
       </IonContent>
